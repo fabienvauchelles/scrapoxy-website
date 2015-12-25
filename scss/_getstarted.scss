@@ -1,0 +1,94 @@
+#getstarted {
+    $left-size: 40px;
+
+    background: $body-bg-alternate;
+
+    .steps {
+        margin-top: 30px;
+    }
+
+    .step {
+        display: flex;
+        flex-flow: column;
+
+        &:hover {
+            .step-number {
+                color: $body-bg;
+                background: $brand-primary;
+            }
+        }
+    }
+
+    .step-header {
+        display: flex;
+
+        height: $left-size;
+
+        align-items: center;
+    }
+
+    .step-number {
+        @include rounded($left-size);
+
+        display: inline-block;
+
+        color: $brand-primary;
+        border-color: $brand-primary;
+        border-width: 2px;
+
+        .fa {
+            position: absolute;
+            top: 8px;
+            left: 7px;
+
+            font-size: 22px;
+        }
+
+        span {
+            position: absolute;
+            top: -1px;
+            left: 11px;
+
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    .step-title {
+        margin-left: 15px;
+    }
+
+    .step-body {
+        display: flex;
+    }
+
+    .step-line-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+
+        width: $left-size;
+    }
+
+    .step-line {
+        width: 2px;
+
+        background: $brand-primary;
+    }
+
+    .step-commandline-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        flex: 1;
+
+        height: 60px;
+
+        margin-left: 15px;
+    }
+
+    .commandline {
+        padding: 5px 10px;
+    }
+}

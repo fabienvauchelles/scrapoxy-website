@@ -1,0 +1,432 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Scrapoxy</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="icon" type="image/png" href="assets/images/logo32.png"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet'
+          type='text/css'>
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <link rel="stylesheet" href="vendor.css">
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                Scrapoxy
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://scrapoxy.readthedocs.org" target="_blank">
+                    <i class="fa fa-info-circle"></i> Documentation
+                </a></li>
+
+                <li><a href="https://github.com/fabienvauchelles/scrapoxy" target="_blank">
+                    <i class="fa fa-code-fork"></i> Fork on Github
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- JUMBOTRON -->
+<section id="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="title">
+                    <div class="title-header">
+                        <img src="assets/images/logo322.png" alt="scrapoxy">
+                    </div>
+
+                    <div class="title-description">
+                        <p>
+                            Scrapoxy <span class="highlight">hides</span> your scraper behind a cloud.
+                        </p>
+
+                        <p>
+                            It starts a pool of proxies to send your requests.
+                        </p>
+
+                        <p>
+                            Now, you can crawl without thinking about blacklisting!
+                        </p>
+
+                        <p>
+                            It is written in ES6 (<a href="https://nodejs.org" target="_blank">Node.js</a> and <a
+                                href="https://angularjs.org" target="_blank">AngularJS</a>)<br/>
+                            and it is <span class="highlight">open source</span>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="install panel panel-default">
+                    <div class="install-header">
+                        Install the latest version of Scrapoxy
+                    </div>
+
+                    <div class="install-version">
+                        <i class="fa fa-cloud-download"></i> Scrapoxy 2.2.1
+                    </div>
+
+                    <div class="install-how">
+                        <div class="install-command commandline">
+                            <div class="line">
+                                <span class="prefix">$</span> npm install -g scrapoxy
+                            </div>
+                        </div>
+
+                        <div class="install-links">
+                            <iframe src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true"
+                                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+                            <iframe src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=fork&count=true"
+                                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- HOW TO -->
+<section id="howto">
+    <div class="container">
+        <h2>
+            How does it work ?
+        </h2>
+
+        <div class="schema">
+            <img src="assets/images/animated.gif" alt="Howto">
+        </div>
+    </div>
+</section>
+
+
+<!-- FEATURES -->
+<section id="features">
+    <div class="container">
+        <h2>
+            Features
+        </h2>
+
+        <div class="row">
+            <div class="feature col-md-4 col-sm-6">
+                <div class="feature-icon">
+                    <div class="fa fa-cloud"></div>
+                </div>
+
+                <div class="feature-title">
+                    <small>a</small>
+                    Personal Proxy
+                </div>
+
+                <div class="feature-description">
+                    <ul>
+                        <li>Create your own proxies</li>
+                        <li>Use multiple cloud providers</li>
+                        <li>Save your money ($$$)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature col-md-4 col-sm-6">
+                <div class="feature-icon">
+                    <div class="fa fa-rocket"></div>
+                </div>
+
+                <div class="feature-title">
+                    <small>with</small>
+                    Anti-Blacklisting
+                </div>
+
+                <div class="feature-description">
+                    <ul>
+                        <li>Rotate IP addresses</li>
+                        <li>Impersonate known browsers</li>
+                        <li>Exclude blacklisted instances</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature col-md-4 col-sm-6">
+                <div class="feature-icon">
+                    <div class="fa fa-line-chart"></div>
+                </div>
+
+                <div class="feature-title">
+                    <small>and</small>
+                    Statistics
+                </div>
+
+                <div class="feature-description">
+                    <ul>
+                        <li>Monitor the requests</li>
+                        <li>Detect bottleneck</li>
+                        <li>Optimize the scraping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- GET STARTED -->
+<section id="getstarted">
+    <div class="container">
+        <h2>Get started with AWS/EC2</h2>
+
+        <div class="steps row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number"><span>1</span></div>
+
+                        <div class="step-title">
+                            Install Scrapoxy
+                        </div>
+                    </div>
+
+                    <div class="step-body">
+                        <div class="step-line-container">
+                            <div class="step-line"></div>
+                        </div>
+
+                        <div class="step-commandline-container">
+                            <div class="commandline">
+                                <div class="line">
+                                    <span class="prefix">$</span> npm install -g scrapoxy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number"><span>2</span></div>
+
+                        <div class="step-title">
+                            Create config
+                        </div>
+                    </div>
+
+                    <div class="step-body">
+                        <div class="step-line-container">
+                            <div class="step-line"></div>
+                        </div>
+
+                        <div class="step-commandline-container">
+                            <div class="commandline">
+                                <div class="line">
+                                    <span class="prefix">$</span> scrapoxy init conf.json
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number"><span>3</span></div>
+
+                        <div class="step-title">
+                            Enter your AWS credentials
+                        </div>
+                    </div>
+
+                    <div class="step-body">
+                        <div class="step-line-container">
+                            <div class="step-line"></div>
+                        </div>
+
+                        <div class="step-commandline-container">
+                            <div class="commandline">
+                                <div class="line">
+                                    <span class="prefix">$</span> vi conf.json
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number"><span>4</span></div>
+
+                        <div class="step-title">
+                            Start Scrapoxy
+                        </div>
+                    </div>
+
+                    <div class="step-body">
+                        <div class="step-line-container">
+                            <div class="step-line"></div>
+                        </div>
+
+                        <div class="step-commandline-container">
+                            <div class="commandline">
+                                <div class="line">
+                                    <span class="prefix">$</span> scrapoxy start conf.json
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number"><i class="fa fa-check"></i></div>
+
+                        <div class="step-title">
+                            Monitor at <a href="http://localhost:8889" target="_blank">http://localhost:8889</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- STARS -->
+
+<section id="stars">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Like the project ?</h2>
+            </div>
+
+            <div class="col-md-6 stars">
+                <div class="stars-text">
+                    Add a star on Github !
+                </div>
+
+                <div class="stars-links">
+                    <iframe
+                            src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true&size=large"
+                            allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTRIBUTE -->
+<section id="contribute">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contribute ?</h2>
+
+                <p>
+                    You can open
+                    <a href="https://github.com/fabienvauchelles/scrapoxy/issues" target="_blank">an issue on
+                        Github </a>
+                    for any feedback<br/>
+                    (bug, question, request, pull request, etc.)<br/>
+                    or
+                    <a href="https://github.com/fabienvauchelles/scrapoxy" target="_blank">fork the project</a>.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="second">More info ?</h2>
+
+                <p>
+                    Check the documentation on <a href="https://scrapoxy.readthedocs.org">ReadTheDocs</a> !
+                </p>
+
+                <form class="form-inline"
+                      action="//scrapoxy.us12.list-manage.com/subscribe/post?u=526d570cf39bccceb202bc4df&id=51e8be93f3"
+                      method="post"
+                      target="_blank"
+                      novalidate>
+                    <input type="hidden" name="b_526d570cf39bccceb202bc4df_51e8be93f3" value="">
+
+                    <div class="input-group">
+                        <input class="form-control"
+                               type="email"
+                               name="EMAIL"
+                               placeholder="Email"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default"
+                                    type="submit"
+                                    name="subscribe"
+                                    value="Subscribe"><i class="fa fa-send"></i></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CREDITS -->
+<section id="credits">
+    <div class="container">
+        <div class="credits-text">
+            The Scrapoxy project is developped by <a href="http://fabien.vauchelles.com" target="_blank">Fabien
+            Vauchelles</a>.
+        </div>
+    </div>
+</section>
+
+
+<!-- build:js(src) scripts/vendor.js -->
+<script src="../node_modules/lodash/index.js"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp/serve,.tmp/partials}) scripts/app.js -->
+<script src="index.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>
