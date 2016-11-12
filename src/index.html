@@ -235,13 +235,13 @@
         <h2>Get started with AWS/EC2</h2>
 
         <div class="steps row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="step">
                     <div class="step-header">
                         <div class="step-number"><span>1</span></div>
 
                         <div class="step-title">
-                            Install Scrapoxy
+                            Run the <a href="https://www.docker.com" target="_blank">Docker</a> image
                         </div>
                     </div>
 
@@ -253,8 +253,24 @@
                         <div class="step-commandline-container">
                             <div class="commandline">
                                 <div class="line">
-                                    <span class="prefix">$</span> npm install -g scrapoxy
+                                    <span class="prefix">$</span> sudo docker run -e COMMANDER_PASSWORD='CHANGE_THIS_PASSWORD' \
                                 </div>
+                                <div class="line line-tab">
+                                    -e PROVIDERS_AWSEC2_ACCESSKEYID='YOUR ACCESS KEY ID' \
+                                </div>
+                                <div class="line line-tab">
+                                    -e PROVIDERS_AWSEC2_SECRETACCESSKEY='YOUR SECRET ACCESS KEY' \
+                                </div>
+                                <div class="line line-tab">
+                                    -it -p 8888:8888 -p 8889:8889 fabienvauchelles/scrapoxy
+                                </div>
+                            </div>
+
+                            <div class="help">
+                                Don’t forget to change
+                                the <span class="highlight">password</span>,
+                                the <span class="highlight">accessKeyId</span> and
+                                the <span class="highlight">secretAccessKey</span>!
                             </div>
                         </div>
                     </div>
@@ -263,78 +279,6 @@
                 <div class="step">
                     <div class="step-header">
                         <div class="step-number"><span>2</span></div>
-
-                        <div class="step-title">
-                            Create config
-                        </div>
-                    </div>
-
-                    <div class="step-body">
-                        <div class="step-line-container">
-                            <div class="step-line"></div>
-                        </div>
-
-                        <div class="step-commandline-container">
-                            <div class="commandline">
-                                <div class="line">
-                                    <span class="prefix">$</span> scrapoxy init conf.json
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-header">
-                        <div class="step-number"><span>3</span></div>
-
-                        <div class="step-title">
-                            Enter your AWS credentials for eu-west-1
-                        </div>
-                    </div>
-
-                    <div class="step-body">
-                        <div class="step-line-container">
-                            <div class="step-line"></div>
-                        </div>
-
-                        <div class="step-commandline-container">
-                            <div class="commandline">
-                                <div class="line">
-                                    <span class="prefix">$</span> vi conf.json
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-header">
-                        <div class="step-number"><span>4</span></div>
-
-                        <div class="step-title">
-                            Start Scrapoxy
-                        </div>
-                    </div>
-
-                    <div class="step-body">
-                        <div class="step-line-container">
-                            <div class="step-line"></div>
-                        </div>
-
-                        <div class="step-commandline-container">
-                            <div class="commandline">
-                                <div class="line">
-                                    <span class="prefix">$</span> scrapoxy start conf.json
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-header">
-                        <div class="step-number"><i class="fa fa-check"></i></div>
 
                         <div class="step-title">
                             Monitor at <a href="http://localhost:8889" target="_blank">http://localhost:8889</a>
