@@ -75,11 +75,30 @@
         margin: 0 auto;
         padding: 5px 15px;
     }
-    
+
     .install-links {
         margin-top: 10px;
         margin-left: 35px;
 
         text-align: center;
+    }
+
+    .install-join {
+        font-size: 16px;
+        font-weight: 300;
+
+        a {
+            color: $body-bg;
+            font-weight: 400;
+        }
+    }
+
+    .install-form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        input {
+            width: 270px;
+        }
     }
 }
