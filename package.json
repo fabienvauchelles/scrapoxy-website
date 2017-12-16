@@ -49,6 +49,8 @@
         "wrench": "~1.5.8"
     },
     "scripts": {
+        "start": "gulp serve",
+        "build": "gulp build",
         "test": "gulp test"
     },
     "engines": {
