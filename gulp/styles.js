@@ -2,7 +2,8 @@
 
 const browserSync = require('browser-sync'),
     gulp = require('gulp'),
-    path = require('path');
+    path = require('path'),
+    sass = require('gulp-sass')(require('sass'));
 
 const $ = require('gulp-load-plugins')();
 
@@ -19,7 +20,7 @@ gulp.task('styles', () => {
         path.join(conf.paths.scss, '/vendor.scss'),
     ])
         .pipe($.sourcemaps.init())
-        .pipe($.sass(sassOptions)).on('error', conf.errorHandler('Sass'))
+        .pipe(sass(sassOptions)).on('error', conf.errorHandler('Sass'))
         .pipe($.autoprefixer()).on('error', conf.errorHandler('Autoprefixer'))
         .pipe($.sourcemaps.write())
         .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/')))

@@ -11,20 +11,22 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Rich Card: Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="http://scrapoxy.io" />
-    <meta name="twitter:site" content="@scrapoxy_io" />
-    <meta name="twitter:creator" content="@fabienv" />
-    <meta name="twitter:title" content="Scrapoxy" />
-    <meta name="twitter:description" content="Scrapoxy hides your scraper behind a cloud. Now, you can crawl without thinking about blacklisting!" />
-    <meta name="twitter:image" content="http://scrapoxy.io/assets/images/logo120.jpg" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url" content="https://scrapoxy.io"/>
+    <meta name="twitter:site" content="@scrapoxy_io"/>
+    <meta name="twitter:creator" content="@fabienv"/>
+    <meta name="twitter:title" content="Scrapoxy"/>
+    <meta name="twitter:description"
+          content="Scrapoxy hides your scraper behind a cloud. Now, you can crawl without thinking about blacklisting!"/>
+    <meta name="twitter:image" content="https://scrapoxy.io/assets/images/logo120.jpg"/>
 
     <!-- Rich Card: OpenGraph (Facebook, Google+, PinInterest) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://scrapoxy.io" />
-    <meta property="og:title" content="Scrapoxy" />
-    <meta property="og:description" content="Scrapoxy hides your scraper behind a cloud. Now, you can crawl without thinking about blacklisting!" />
-    <meta property="og:image" content="http://scrapoxy.io/assets/images/logo200.jpg" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://scrapoxy.io"/>
+    <meta property="og:title" content="Scrapoxy"/>
+    <meta property="og:description"
+          content="Scrapoxy hides your scraper behind a cloud. Now, you can crawl without thinking about blacklisting!"/>
+    <meta property="og:image" content="https://scrapoxy.io/assets/images/logo200.jpg"/>
 
     <link rel="icon" type="image/png" href="assets/images/logo32.png"/>
 
@@ -46,6 +48,107 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div id="popup">
+    <div class="background"></div>
+
+    <div class="container">
+        <p class="date">
+            October 4, 2023.
+        </p>
+
+        <p>
+            Dear Webscraping Community,
+        </p>
+
+        <p>
+            <b>Scrapoxy 4</b>, the support proxies aggregator is currently in heavy preparation and will soon be released.
+            This latest version represents a full rewrite, the results of almost two years of dedicated investment,
+            and is <b>tailored for the webscraping industry</b>.
+        </p>
+
+        <p>
+            I would like to thanks all the contributors who have helped during these years me to make this project a reality.<br/>
+            Today, I am now fully dedicated to this project, for the next years ahead, thanks to
+            <a href="https://www.wiremind.io" target="_blank">Wiremind</a>.
+        </p>
+
+        <p>
+            The tech stack is built on the latest
+            <a href="https://nodejs.org" target="_blank">NodeJS</a>,
+            <a href="https://www.typescriptlang.org" target="_blank">Typescript</a>, utilizing the
+            <a href="https://nestjs.com" target="_blank">NestJS</a> and
+            <a href="https://angular.io" target="_blank">Angular</a>
+            frameworks.
+        </p>
+
+        <p>
+            Here are the included features:
+        </p>
+
+        <ul>
+            <li>
+                Support for <b>Cloud providers</b> such as
+                <a href="https://aws.amazon.com" target="_blank">AWS</a>,
+                <a href="https://azure.microsoft.com" target="_blank">Azure</a>,
+                <a href="https://cloud.google.com" target="_blank">GCP</a>,
+                <a href="https://www.ovhcloud.com" target="_blank">OVH</a>,
+                <a href="https://www.digitalocean.com" target="_blank">Digital Ocean</a>,
+                and many more on the horizon, with easy installation
+            </li>
+            <li>
+                Compatibility with <b>Proxies providers</b> like
+                <a href="https://www.zyte.com" target="_blank">Zyte</a>,
+                <a href="https://rayobyte.com" target="_blank">Rayobyte</a>,
+                <a href="https://iproyal.com" target="_blank">IPRoyal</a>,
+                <a href="https://www.proxyrack.com" target="_blank">Proxyrack</a>,
+                with additional providers being added regularly
+            </li>
+            <li>
+                Integration with <b>Hardware providers</b> like
+                <a href="https://proxidize.com" target="_blank">Proxidize</a>
+            </li>
+            <li>Seamless compatibility with free HTTP/HTTPS proxies</li>
+            <li>Intelligent traffic routing across proxies, following a robust anti-ban strategy</li>
+            <li>Effortless management of <b>sticky sessions</b> (including web browser support)</li>
+            <li>Autoscaling proxies to optimize costs with both upscale and downscale capabilities</li>
+            <li>Real-time request and response <b>rewriting</b> on-the-fly</li>
+            <li>Modern authentication methods, including Google and Github</li>
+            <li>End-to-end <b>encryption</b> of traffic between the master and proxies</li>
+            <li>
+                <b>Distributed</b> architecture on
+                <a href="https://www.docker.com" target="_blank">Docker</a>,
+                <a href="https://kubernetes.io" target="_blank">Kubernetes</a>,
+                <a href="https://www.rabbitmq.com" target="_blank">RabbitMQ</a> and
+                <a href="https://www.mongodb.com" target="_blank">MongoDB</a>
+            </li>
+            <li>Stability with more than 500 end-to-end tests</li>
+            <li>And there's a lot more exciting features in the pipeline!</li>
+        </ul>
+
+        <p>
+            As always, Scrapoxy <b>remains open source</b>, ensuring that the web scraping community
+            can continue to benefit from its capabilities.
+        </p>
+
+        <p>
+            Stay tuned on <a href="https://github.com/fabienvauchelles/scrapoxy" target="_blank">Github</a>
+            for the official release announcement, and I can't wait to see how Scrapoxy 4 elevates your
+            webscraping projects to new heights!
+        </p>
+
+        <p>
+            Fabien.
+        </p>
+    </div>
+
+    <div class="btn-close" onclick="dismissPopup()">[X]</div>
+</div>
+
+<script>
+    function dismissPopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -66,7 +169,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://docs.scrapoxy.io" target="_blank">
+                <li><a href="https://docs.scrapoxy.io" target="_blank">
                     <i class="fa fa-info-circle"></i> Documentation
                 </a></li>
 
@@ -107,7 +210,7 @@
 
                         <p>
                             It is written in ES6 (<a href="https://nodejs.org" target="_blank">Node.js</a> and <a
-                                href="https://angularjs.org" target="_blank">AngularJS</a>)<br/>
+                            href="https://angularjs.org" target="_blank">AngularJS</a>)<br/>
                             and it is <span class="highlight">open source</span>!
                         </p>
                     </div>
@@ -132,40 +235,16 @@
                         </div>
 
                         <div class="install-links">
-                            <iframe src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true"
-                                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                            <iframe
+                                src="https://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true"
+                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 
-                            <iframe src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=fork&count=true"
-                                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                            <iframe
+                                src="https://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=fork&count=true"
+                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
                         </div>
                     </div>
-
-                    <div class="install-join">
-                        and join the <a href="https://scrapoxy.slack.com">Slack</a> community !
-                    </div>
-
-                    <div class="install-form">
-                        <form class="form-inline"
-                              action="slack-invite.php"
-                              method="post"
-                              novalidate>
-
-                            <div class="input-group">
-                                <input class="form-control"
-                                       type="email"
-                                       name="email"
-                                       placeholder="Email"/>
-                                <span class="input-group-btn">
-                                <button class="btn btn-default"
-                                        type="submit"
-                                        name="join"
-                                        value="Join"><i class="fa fa-send"></i></button>
-                            </span>
-                            </div>
-                        </form>
-                    </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -279,7 +358,8 @@
                         <div class="step-commandline-container">
                             <div class="commandline">
                                 <div class="line">
-                                    <span class="prefix">$</span> sudo docker run -e COMMANDER_PASSWORD='CHANGE_THIS_PASSWORD' \
+                                    <span class="prefix">$</span> sudo docker run -e
+                                    COMMANDER_PASSWORD='CHANGE_THIS_PASSWORD' \
                                 </div>
                                 <div class="line line-tab">
                                     -e PROVIDERS_AWSEC2_ACCESSKEYID='YOUR ACCESS KEY ID' \
@@ -333,8 +413,8 @@
 
                 <div class="stars-links">
                     <iframe
-                            src="http://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true&size=large"
-                            allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+                        src="https://ghbtns.com/github-btn.html?user=fabienvauchelles&repo=scrapoxy&type=watch&count=true&size=large"
+                        allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
                 </div>
             </div>
         </div>
@@ -364,28 +444,8 @@
                 <h2 class="second">More info ?</h2>
 
                 <p>
-                    Check the <a href="http://docs.scrapoxy.io">documentation</a> !<br/>
-                    And join the <a href="https://scrapoxy.slack.com">Slack</a> community:
+                    Check the <a href="https://docs.scrapoxy.io">documentation</a> !
                 </p>
-
-                <form class="form-inline"
-                      action="slack-invite.php"
-                      method="post"
-                      novalidate>
-
-                    <div class="input-group">
-                        <input class="form-control"
-                               type="email"
-                               name="email"
-                               placeholder="Email"/>
-                        <span class="input-group-btn">
-                            <button class="btn btn-default"
-                                    type="submit"
-                                    name="join"
-                                    value="Join"><i class="fa fa-send"></i></button>
-                        </span>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
@@ -396,7 +456,7 @@
 <section id="credits">
     <div class="container">
         <div class="credits-text">
-            The Scrapoxy project is developped by <a href="http://fabien.vauchelles.com" target="_blank">Fabien
+            The Scrapoxy project is developped by <a href="https://www.linkedin.com/in/fabienvauchelles" target="_blank">Fabien
             Vauchelles</a>.
         </div>
     </div>

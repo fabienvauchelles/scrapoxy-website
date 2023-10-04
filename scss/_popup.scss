@@ -1,0 +1,53 @@
+#popup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid white;
+
+    color: white;
+    background: #0A0E11;
+
+    .date {
+        font-style: italic;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .background {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        opacity: 0.15;
+        background: url('../assets/images/scrapoxy_hitman.jpg') no-repeat center center;
+    }
+
+    .container {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        color: white;
+
+        cursor: pointer;
+    }
+}
